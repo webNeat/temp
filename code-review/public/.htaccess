@@ -1,0 +1,5 @@
+RewriteEngine on
+
+RewriteRule ^newsletter/([0-9]+)$ newsletter/index.php?page=newsletter&id=$1
+
+# All other rules here ...

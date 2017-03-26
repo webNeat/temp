@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+/**
+ * This script checks and sends scheduled emails
+ * It should be run each minute using a cron job
+ */
+
+require __DIR__ . '/../bootstrap.php';
+
+// get newsletter emails for which the schedule time >= current time.
+// this is typically done using an ORM to query the database and 
+// return the emails instances.
+
+// $emails = ....
+
+// send emails
+foreach ($emails as $email) {
+	$email->send();
+}

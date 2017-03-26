@@ -1,0 +1,12 @@
+{
+    "name": "wn/newsletters",
+    "require": {},
+    "require-dev": {
+        "codeception/codeception": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wn\\Newsletters\\": "src/"
+        }
+    }
+}

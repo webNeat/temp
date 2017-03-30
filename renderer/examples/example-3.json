@@ -1,0 +1,28 @@
+{
+  "type": "email",
+  "title": "Second Example",
+  "content": {
+    "type": "rows",
+    "content": [
+      {
+        "type": "text",
+        "content": "Text Top"
+      },
+      {
+        "type": "image",
+        "src": "http://placehold.it/600x150",
+        "alt": "Image",
+        "width": 600,
+        "height": 150
+      },
+      {
+        "type": "text",
+        "content": "Some long text here ..."
+      },
+      {
+        "type": "text",
+        "content": "Text Footer"
+      }
+    ]
+  }
+}

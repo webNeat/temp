@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+}
+
+.column {
+	flex: 1;
+}
+
+.box {
+	margin: 5px;
+	border: 2px solid;
+}
+
+.box > h1 {
+	font-size: 14pt;
+	color: white;
+	text-align: center;
+	padding: 5px;
+}
+
+.default {
+	border-color: #333;
+}
+.default > h1 {
+	background: #333;
+}
+
+.error {
+	border-color: #710000;
+}
+.error > h1 {
+	background: #710000;
+}

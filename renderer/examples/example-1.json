@@ -1,0 +1,57 @@
+{
+  "type": "email",
+  "title": "First Example",
+  "content": {
+    "type": "rows",
+    "content": [
+      {
+        "type": "columns",
+        "content": [
+          {
+            "size": 1,
+            "type": "image",
+            "src": "http://placehold.it/300x150",
+            "alt": "Image Top Left",
+            "width": 300,
+            "height": 150
+          },
+          {
+            "size": 1,
+            "type": "image",
+            "src": "http://placehold.it/300x150",
+            "alt": "Image Top Right",
+            "width": 300,
+            "height": 150
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "This is the content in the middle"
+      },
+      {
+        "type": "columns",
+        "content": [
+          {
+            "size": 1,
+            "type": "text",
+            "content": "Text Bottom Left"
+          },
+          {
+            "size": 1,
+            "type": "text",
+            "content": "Text Center Left"
+          },
+          {
+            "size": 1,
+            "type": "image",
+            "src": "http://placehold.it/200x150",
+            "alt": "Image Bottom Right",
+            "width": 200,
+            "height": 150
+          }
+        ]
+      }
+    ]
+  }
+}

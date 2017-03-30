@@ -1,0 +1,14 @@
+{
+  "name": "renderer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/renderer.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Amine Ben hammou <webneat@gmail.com>",
+  "license": "GPL",
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}

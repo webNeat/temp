@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Live Renderer</title>
+		<link rel="stylesheet" href="style.css">
+		<!-- Renderer -->
+		<script src="../src/render.js"></script>
+		<script src="../src/design/browser.js"></script>
+		<!-- Code Mirror -->
+		<script src="codemirror/lib/codemirror.js"></script>
+		<script src="codemirror/mode/javascript/javascript.js"></script>
+		<link rel="stylesheet" href="codemirror/lib/codemirror.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="column">
+				<div id="design-container" class="box default">
+					<h1> Design Description </h1>
+					<textarea id="design">{
+    "email": "<!doctype html><html><head><title>${title}</title><meta charset=\"utf-8\"><style>div{border:1px solid black} div,p{text-align:center} .columns{display:flex} img{display:inline-block}</style></head><body>${content}</body></html>",
+    "rows": {
+        "layout": "<div>${content}</div>",
+        "element": "<div>${content}</div>"
+    },
+    "columns": {
+        "layout": "<div class=\"columns\">${content}</div>",
+        "element": "<div style=\"flex:${size}\">${content}</div>"
+    },
+    "text": "<p>${content}</p>",
+    "image": "<img src=\"${src}\" alt=\"${alt}\" width=\"${width}\" height=\"${height}\"/>"
+}</textarea>
+				</div>
+				<div id="content-container" class="box default">
+					<h1> Content Description </h1>
+					<textarea id="content">{
+  "type": "email",
+  "title": "Second Example",
+  "content": {
+    "type": "rows",
+    "content": [
+      {
+        "type": "text",
+        "content": "Text Top"
+      },
+      {
+        "type": "image",
+        "src": "http://placehold.it/600x150",
+        "alt": "Image",
+        "width": 600,
+        "height": 150
+      },
+      {
+        "type": "text",
+        "content": "Some long text here ..."
+      },
+      {
+        "type": "text",
+        "content": "Text Footer"
+      }
+    ]
+  }
+}</textarea>
+				</div>
+			</div>
+			<div id="result-container" class="column box default">
+				<iframe id="result" src="" frameborder="0" width="100%" height="100%"></iframe>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
